@@ -4,67 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>form</title>
-    <style>
-        body {
-            background-color: bisque;
-        }
-
-        .form {
-            width: 50%;
-            background-color: azure;
-            margin: 0 auto;
-            border-radius: 10px;
-        }
-
-        fieldset {
-            padding: 20px;
-        }
-    </style>
+    <title>Таблицы</title>
 </head>
 
 <body>
-    <form action="" method="post">
-        <fieldset class="form">
-            <legend>Вход</legend>
-            Логин <input type="text" placeholder="Введите логин" name="Логин" required> <br> <br>
-            Пароль <input type="password" placeholder="Введите пароль" name="Пароль" minlength="6"> <br><br>
-            Почта <input type="email" placeholder="Введите почту" name="mail">
-        </fieldset> <br>
-
-        <fieldset class="form">
-            <legend>Интересы</legend>
-            <input type="checkbox" name="interes" value="музыка" id="music"> <label for="music">Музыка</label> <br>
-            <label><input type="checkbox" name="interes" value="sport"> Спорт</label> <br>
-            <label><input type="checkbox" name="interes" value="programm"> Программирование</label> <br>
-        </fieldset> <br>
-        <fieldset class="form">
-            <legend>Доставка</legend>
-            <input type="radio" name="delivery"> Самовывоз <br>
-            <input type="radio" name="delivery"> Курьером <br>
-            <input type="radio" name="delivery" checked> Пункт выдачи <br>
-        </fieldset> <br>
-        <fieldset class="form">
-            <h2>Выбор города</h2>
-            <select class="form" name="" id="">
-                <option selected disabled>Укажите город</option>
-                <optgroup label="Сибирь">
-                    <option value="Тюмень">Тюмень</option>
-                    <option value="Сургут">Сургут</option>
-                    <option value="Ялуторовск"> Ялуторовск</option>
-                    <option value="Тобольск">Тобольск</option>
-                </optgroup>
-                <optgroup label="Столицы">
-                    <option value="Москва">Москва</option>
-                </optgroup>
-            </select> <br> <br> <br>
-            <textarea class="form" name="comment" placeholder="Оставьте Ваш комментарий" cols="50" rows="10"></textarea>
-            <br> <br>
-            <input type="submit"> <br> <br>
-            <button type="reset">Очистить форму</button>
-        </fieldset>
-
-    </form>
+    <table border="1">
+        <caption>Заголовок таблицы</caption>
+        <tr>
+            <th>Фамилия</th>
+            <th>Имя</th>
+            <th>Должность</th>
+        </tr>
+        <tr>
+            <td>Петров</td>
+            <td>Пётр</td>
+            <td>Директор</td>
+        </tr>
+        <tr></tr>
+        <td>Степанов</td>
+        <td>Степанов</td>
+        <td>Инженер</td>
+        </tr>
+    </table>
 </body>
 
 </html>
